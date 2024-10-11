@@ -14,6 +14,7 @@ public class Management {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // TODO code application logic here
         user_management login_register = new user_management();
         login_register.user_choose();
     }
@@ -27,8 +28,7 @@ public void user_choose() {
         while (true) {
             System.out.println("Choose an option: 1. Registration 2. Login");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
-
+            scanner.nextLine();
             if (choice == 1) {
                 user_registration();
             } else if (choice == 2) {
